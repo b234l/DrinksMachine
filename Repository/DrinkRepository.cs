@@ -27,8 +27,8 @@ namespace DrinksMachine.Repositories
                 drinks.Add(new Drink
                 {
                     Id = reader["Id"].ToString(),
-                    DrinkName = reader["Name"].ToString(),
-                    Img = reader["Description"].ToString(),
+                    DrinkName = reader["DrinkName"].ToString(),
+                    Img = reader["Img"].ToString(),
                     Price = reader["Price"].ToString(),
                     Quantity = reader["Quantity"].ToString()
                 });
@@ -51,8 +51,8 @@ namespace DrinksMachine.Repositories
                 drink = new Drink
                 {
                     Id = reader["Id"].ToString(),
-                    DrinkName = reader["Name"].ToString(),
-                    Img = reader["Description"].ToString(),
+                    DrinkName = reader["DrinkName"].ToString(),
+                    Img = reader["Img"].ToString(),
                     Price = reader["Price"].ToString(),
                     Quantity = reader["Quantity"].ToString()
                 };

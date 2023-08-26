@@ -8,25 +8,25 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DrinksMachine
 build_property.RootNamespace = DrinksMachine
-build_property.ProjectDir = d:\C#\DrinksMachine\
+build_property.ProjectDir = d:\C#\КоролёвАлексей_ТестовоеЗадание\DrinksMachine\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\C#\DrinksMachine
+build_property.MSBuildProjectDirectory = d:\C#\КоролёвАлексей_ТестовоеЗадание\DrinksMachine
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/C\#/DrinksMachine/Views/Admin/Index.cshtml]
+[d:/C\#/КоролёвАлексей_ТестовоеЗадание/DrinksMachine/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/C\#/DrinksMachine/Views/DrinkMachine/index.cshtml]
+[d:/C\#/КоролёвАлексей_ТестовоеЗадание/DrinksMachine/Views/DrinkMachine/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJpbmtNYWNoaW5lXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/C\#/DrinksMachine/Views/Shared/AdminLayout.cshtml]
+[d:/C\#/КоролёвАлексей_ТестовоеЗадание/DrinksMachine/Views/Shared/AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/C\#/DrinksMachine/Views/Shared/_Layout.cshtml]
+[d:/C\#/КоролёвАлексей_ТестовоеЗадание/DrinksMachine/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
