@@ -27,9 +27,10 @@ namespace DrinksMachine.Repositories
                 drinks.Add(new Drink
                 {
                     Id = reader["Id"].ToString(),
-                    Name = reader["Name"].ToString(),
-                    Description = reader["Description"].ToString(),
+                    DrinkName = reader["Name"].ToString(),
+                    Img = reader["Description"].ToString(),
                     Price = reader["Price"].ToString(),
+                    Quantity = reader["Quantity"].ToString()
                 });
             }
 
@@ -50,9 +51,10 @@ namespace DrinksMachine.Repositories
                 drink = new Drink
                 {
                     Id = reader["Id"].ToString(),
-                    Name = reader["Name"].ToString(),
-                    Description = reader["Description"].ToString(),
+                    DrinkName = reader["Name"].ToString(),
+                    Img = reader["Description"].ToString(),
                     Price = reader["Price"].ToString(),
+                    Quantity = reader["Quantity"].ToString()
                 };
             }
 
@@ -61,23 +63,24 @@ namespace DrinksMachine.Repositories
 
         public void AddDrink(Drink drink)
         {
-            var sql = "INSERT INTO Drinks (Name, Description, Price) VALUES (@Name, @Description, @Price)";
+            var sql = "INSERT INTO Drinks (DrinkName, Img, Price, Quantity) VALUES (@DrinkName, @Img, @Price, @Quantity)";
             var command = new SqlCommand(sql, _connection);
-            command.Parameters.AddWithValue("@Name", drink.Name);
-            command.Parameters.AddWithValue("@Description", drink.Description);
+            command.Parameters.AddWithValue("@DrinkName", drink.DrinkName);
+            command.Parameters.AddWithValue("@Img", drink.Img);
             command.Parameters.AddWithValue("@Price", drink.Price);
+            command.Parameters.AddWithValue("@Quantity", drink.Quantity);
 
             command.ExecuteNonQuery();
         }
 
         public void UpdateDrink(Drink drink)
         {
-            var sql = "UPDATE Drinks SET Name=@Name, Description=@Description, Price=@Price WHERE Id=@Id";
+            var sql = "UPDATE Drinks SET DrinkName=@DrinkName, Img=@Img, Price=@Price, Quantity=@Quantity WHERE Id=@Id";
             var command = new SqlCommand(sql, _connection);
-            command.Parameters.AddWithValue("@Name", drink.Name);
-            command.Parameters.AddWithValue("@Description", drink.Description);
+            command.Parameters.AddWithValue("@DrinkName", drink.DrinkName);
+            command.Parameters.AddWithValue("@Img", drink.Img);
             command.Parameters.AddWithValue("@Price", drink.Price);
-            command.Parameters.AddWithValue("@Id", drink.Id);
+            command.Parameters.AddWithValue("@Quantity", drink.Quantity);
 
             command.ExecuteNonQuery();
         }
