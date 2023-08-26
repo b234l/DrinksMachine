@@ -1,0 +1,35 @@
+﻿@using DrinksMachine.Models.Data;
+
+@{
+    ViewData["Title"] = "Drinks";
+
+    var drinks = Model;
+}
+
+<h1>Drinks</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var drink in drinks)
+        {
+        <tr>
+            <td>@drink.Name</td>
+            <td><img src="@drink.Img" alt="@drink.Name"></td>
+            <td>@drink.Price</td>
+            <td>
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">2</button>
+                <button type="button" class="btn btn-primary">5</button>
+                <button type="button" class="btn btn-primary">10</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

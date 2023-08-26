@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "saxeIa407PDc0buhyfUUKXfIwVBpDml1E2htn+9HWGM=",
+  "Source": "DrinksMachine",
+  "BasePath": "_content/DrinksMachine",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DrinksMachine\\wwwroot",
+      "Source": "DrinksMachine",
+      "ContentRoot": "D:\\C#\\DrinksMachine\\wwwroot\\",
+      "BasePath": "_content/DrinksMachine",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\C#\\DrinksMachine\\wwwroot\\favicon.ico",
+      "SourceId": "DrinksMachine",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\DrinksMachine\\wwwroot\\",
+      "BasePath": "_content/DrinksMachine",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

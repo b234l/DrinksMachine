@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net6.0</TargetFramework>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+	<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+	<PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="System.Data">
+			<HintPath>..\packages\Microsoft.Data.SqlClient.18.0.23\lib\net46\System.Data.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Views\" />
+		<Folder Include="Views\Admin\" />
+		<Folder Include="Models\" />
+		<Folder Include="Models\Data\" />
+		<Folder Include="Controllers\" />
+		<Folder Include="Models\Data\" />
+		<Folder Include="Services\" />
+		<Folder Include="Exceptions" />
+		<Folder Include="Views\Shared\" />
+		<Folder Include="Repository\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Program.cs" />
+		<Compile Include="Models\Drink.cs" />
+		<Compile Include="Controllers\AdminController.cs" />
+		<Compile Include="Startup.cs" />
+		<Compile Include="Controllers\DrinksMachineController.cs" />
+		<Compile Include="Services\DrinkService.cs" />
+		<Compile Include="Models\Data\DrinkDBContext.cs" />
+		<Compile Include="Models\DrinkViewModel.cs" />
+		<Compile Include="Exceptions\NotFoundException.cs" />
+		<Compile Include="Repository\DrinkRepository.cs" />
+		<Compile Include="Repository\IDrinkRepository.cs" />
+	</ItemGroup>
+
+	
+	
+</Project>
